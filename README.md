@@ -2,7 +2,7 @@
 
 # Getting Started with Create React App
 
-Esse projeto trata-se de um teste Desafio Software Engineer para a empresa whiteWall 
+Esse projeto trata-se de um teste Desafio Software Engineer para a empresa White Wall
 
 ## Scripts Disponíveis
 
