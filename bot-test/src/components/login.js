@@ -25,7 +25,7 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <h2>Login</h2>
+      <h2>ACESSE O BOT</h2>
       <form onSubmit={handleLogin}>
         <input
           type="email"
@@ -41,7 +41,7 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Login</button>
+        <button type="submit">Entrar</button>
       </form>
       <h3>Digite sua chave de API do Blip:</h3>
       <input

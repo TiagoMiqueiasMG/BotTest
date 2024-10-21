@@ -19,8 +19,7 @@ const Signup = () => {
     setError('');
     setSuccess(false);
 
-    try {
-      // Cria o usuário com email e senha
+    try {      
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
       
@@ -44,7 +43,7 @@ const Signup = () => {
 
   return (
     <div>
-      <h2>Cadastro</h2>
+      <h2>CADASTRO</h2>
       <form onSubmit={handleSignup}>
         <div>
           <label>Nome:</label>
@@ -76,16 +75,12 @@ const Signup = () => {
         <button type="submit">Cadastrar</button>
         {error && <p style={{ color: 'red' }}>{error}</p>}
       </form>
-
-      {/* Exibe a mensagem de sucesso e o botão de redirecionamento após o cadastro */}
       {success && (
         <div>
           <p style={{ color: 'green' }}>Cadastro realizado com sucesso!</p>
           <button onClick={() => navigate('/login')}>Voltar para Login</button>
         </div>
       )}
-
-      {/* Botão de redirecionamento manual */}
       <div>
         <p>Já tem uma conta? <Link to="/login">Voltar para Login</Link></p>
       </div>
