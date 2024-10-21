@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 import './Talk.css'; 
 
-const Conversa = () => {
+const Talk = () => {
   const { id } = useParams(); 
   const [conversas, setConversas] = useState([]);
   const navigate = useNavigate();
@@ -56,6 +56,6 @@ const Conversa = () => {
   );
 };
 
-export default Conversa;
+export default Talk;
 
 
