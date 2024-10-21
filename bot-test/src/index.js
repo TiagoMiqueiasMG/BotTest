@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client'; 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Login from './components/login'; 
+import Login from './components/Login'; 
 import Home from './components/Home'; 
-import Register from './components/register'; 
+import Register from './components/Register'; 
 import Conversa from './components/Talk';
 
 const App = () => {

@@ -1,13 +1,13 @@
 .conversa-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza horizontalmente o conteúdo */
-    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; 
+    justify-content: center; 
     min-height: 100vh;
     padding: 20px;
-    background-color: #f4f4f4; /* Cor de fundo leve */
+    background-color: #f4f4f4; 
     box-sizing: border-box;
-    position: relative; /* Necessário para posicionar o botão de logout */
+    position: relative; 
   }
   
   ul {
@@ -15,7 +15,7 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    max-width: 600px; /* Limite de largura para uma visualização mais bonita */
+    max-width: 600px; 
   }
   
   li {
@@ -27,12 +27,12 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     display: flex;
-    justify-content: space-between; /* Distribui os elementos igualmente */
+    justify-content: space-between; 
     align-items: center;
   }
   
   li:hover {
-    transform: translateY(-3px); /* Eleva levemente o item ao passar o mouse */
+    transform: translateY(-3px); 
   }
   
   h1 {
@@ -43,11 +43,11 @@
     font-weight: bold;
   }
   
-  /* Estilos do botão de logout */
+  
   .logout-button {
     position: absolute;
     top: 10px;
-    left: 10px; /* Posição no canto superior esquerdo */
+    left: 10px; 
     background-color: #ff4d4d;
     color: white;
     padding: 10px 20px;
@@ -64,9 +64,9 @@
     background-color: #ff3333;
   }
   
-  /* Estilos do botão "Voltar para Home" */
+  
   .back-home-button {
-    width: 25%; /* Largura do botão */
+    width: 25%; 
     padding: 10px;
     background-color: #007bff;
     color: #fff;
@@ -75,7 +75,7 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-top: 20px; /* Espaço acima do botão */
+    margin-top: 20px; 
   }
   
   .back-home-button:hover {
@@ -88,11 +88,11 @@
     }
   
     ul {
-      max-width: 100%; /* Permite que a lista ocupe a tela inteira em telas menores */
+      max-width: 100%; 
     }
   
     li {
-      flex-direction: column; /* Ajusta a lista para telas menores */
+      flex-direction: column; 
       text-align: center;
     }
   }

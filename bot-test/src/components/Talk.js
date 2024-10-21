@@ -31,7 +31,7 @@ const Conversa = () => {
   }, [id]);
 
   const handleBackToHome = () => {    
-    navigate('/home'); // Navega para a página inicial
+    navigate('/home'); 
   };
 
   const handleLogout = () => {    

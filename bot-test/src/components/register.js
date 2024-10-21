@@ -23,19 +23,16 @@ const Signup = () => {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
       
-      // Grava os dados no Firestore
       await setDoc(doc(db, 'users', user.uid), {
         name: name,
         email: email,
       });
-
-      // Exibe sucesso e redireciona para login
+      
       setSuccess(true);
       alert('Usuário cadastrado com sucesso!');
       navigate('/login');
       
-    } catch (err) {
-      // Mostra o erro no console e na interface
+    } catch (err) {      
       console.error('Erro ao cadastrar usuário:', err);
       setError('Erro ao cadastrar: ' + err.message);
     }

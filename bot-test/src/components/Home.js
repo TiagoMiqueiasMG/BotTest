@@ -46,11 +46,11 @@ const Home = () => {
   const currentContacts = contacts.slice(indexOfFirstContact, indexOfLastContact);
 
   const handleClick = (id) => {
-    navigate(`/contato/${id}`); // Navegar para a página de conversas
+    navigate(`/contato/${id}`); 
   };
 
   const handleLogout = () => {
-    navigate('/login'); // Redireciona para a página de login
+    navigate('/login'); 
   };
 
   if (loading) return <p>Loading...</p>;
@@ -59,7 +59,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <h1>Contatos</h1>
-      <button className="logout-button" onClick={handleLogout}>Logout</button> {/* Botão de logout */}
+      <button className="logout-button" onClick={handleLogout}>Logout</button> 
       <ul>
         {currentContacts.map(contact => (
           <li key={contact.identity} onClick={() => handleClick(contact.identity)}>
